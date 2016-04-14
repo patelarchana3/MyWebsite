@@ -1,0 +1,35 @@
+/* 
+    Document   : HTML5
+    Created on : Apr 10, 2014, 11:40:32 AM
+    Author     : Archana Patel
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+body{
+    margin:30px;
+    /*text-align: center;*/
+    background-image: url('background.jpg');
+}
+
+a{
+    text-decoration: none;
+    background-color:yellow;
+}
+
+#canvas{
+    border:0px solid black;
+    text-align: center;
+    
+}
+
+#header{
+    text-align: center;
+    color:red; 
+    font-weight:bold; 
+    font-size: 30px;
+}

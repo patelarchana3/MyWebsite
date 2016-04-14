@@ -1,0 +1,67 @@
+/* 
+    Document   : main
+    Created on : May 7, 2013, 1:52:53 PM
+    Author     : Archana Patel
+    Description:
+        Purpose of the stylesheet follows.
+*/
+ 
+
+
+
+
+#article{
+    background:  #F0F0F0 ;
+    height: 500px;
+    width: 1100px;
+    margin:20px auto;
+    border:1px solid #F8F8F8;
+    position:relative;
+    border-radius: .2em;
+    
+    -webkit-border-radius : .2em;
+    -moz-border-radius: .2em;
+    
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0, .4);
+    }
+
+   
+h1,h2,h3{
+   color: #669900;
+   font-family:Geneva,Arial,Helvetica,sans-serif;
+   margin-left:20px 
+}
+    
+p{
+   color: #707070;
+   font-family:Geneva,Arial,Helvetica,sans-serif;
+   text-align: justify;
+   margin:50px 30px 0px 10px;
+}
+
+.home_article1{
+   height:400px; 
+   width:500px; 
+  
+   border:0px solid black;
+   float:left;
+   margin-left: 50px; 
+   margin-top: 50px; 
+   display:inline;
+   position: relative;
+}
+
+.home_article2{
+   height:400px; 
+   width:400px; 
+  
+   border:0px solid black;
+   float:left;
+   margin-left: 50px; 
+   margin-top: 50px; 
+   display:inline;
+    position: absolute;
+}
+
+    

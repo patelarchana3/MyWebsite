@@ -1,0 +1,53 @@
+
+root { 
+    display: block;
+}
+
+body{ 
+    
+    background: #F0F0F0;
+}
+
+.heading{
+	color:blue;
+	padding-left:200px;
+}
+.div1{
+	padding-left:120px;
+	
+}
+.padleft{
+	padding-top:10px;
+	padding-left:168px;
+}
+.scroll{
+	overflow-y:scroll;
+	border:1px solid blue;
+}
+.div2{
+	padding-top:10px;
+	padding-left:260px;
+}
+.button{
+	border:solid 1px blue;
+        border-radius: 1.5em;
+        background-color: blue;
+        padding: 5px;
+        font-weight: bold;
+}
+.box1 {
+	border: solid 1px blue;
+	margin-left:15px;
+	width:120px;
+}
+.box2{
+	border: solid 1px blue;
+	margin-left:10px;
+	width:120px;
+} 
+.box3{
+	border: solid 1px blue;
+	margin-left:19px;
+	width:120px;
+}
+

@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+      <link  rel="stylesheet" href="stylesheet/HTML5.css" type="text/css" />
+  </head>
+  <body>
+      <a href="projects.php" > Back to Projects </a><br>
+     <div id="header">
+     <span style="color:red; font-weight:bold; font-size: 30px; ">HTML5 CANVAS</span>
+     </div>
+      <div id="canvas">
+         <canvas id="myCanvas" width="1000" height="600"></canvas>
+   
+    <script>
+        
+      window.onload= function draw(){
+      var c = document.getElementById("myCanvas");
+      var context= c.getContext("2d");
+      context.clearRect(0,0,1000,600);
+
+      context.fillStyle="white";
+      context.fillRect(0,0,1000,600);
+      context.save();
+      
+      var plan=new Image();
+      plan.src="images/aero_images.jpg";
+      context.drawImage(plan,100,100);
+      
+      context.moveTo(0, 500);
+      context.lineTo(1000,500);
+      context.stroke();
+      context.strokeStyle="#99FFFF";
+      context.fillStyle="#99FFFF";
+      context.fillRect(0,500,1000,500);
+      
+      //draw mountains
+      context.beginPath();
+      context.moveTo(0, 500);
+      context.fillStyle="green";
+      context.bezierCurveTo(0,300, 300, 300,500,500 );
+      context.bezierCurveTo(500,500, 600, 200, 1000, 500);
+      context.fill();
+      context.closePath()
+      context.lineWidth="5"
+      context.strokeStyle="green";
+      context.stroke();
+      
+      
+      //draw cloud1
+      context.beginPath();
+      context.moveTo(170, 80);
+      context.fillStyle="blue";
+      context.bezierCurveTo(130, 100, 130, 150, 230, 150);
+      context.bezierCurveTo(250, 180, 320, 180, 340, 150);
+      context.bezierCurveTo(420, 150, 420, 120, 390, 100);
+      context.bezierCurveTo(430, 40, 370, 30, 340, 50);
+      context.bezierCurveTo(320, 5, 250, 20, 250, 50);
+      context.bezierCurveTo(200, 5, 150, 20, 170, 80);
+      context.fill()
+      context.closePath();
+      context.lineWidth = 5;
+      context.strokeStyle = 'blue';
+      context.stroke();
+      
+      
+      //draw cloud2
+      context.translate(500,80);
+      context.beginPath();
+      context.moveTo(170, 80);
+      context.fillStyle="blue";
+      context.bezierCurveTo(130, 100, 130, 150, 230, 150);
+      context.bezierCurveTo(250, 180, 320, 180, 340, 150);
+      context.bezierCurveTo(420, 150, 420, 120, 390, 100);
+      context.bezierCurveTo(430, 40, 370, 30, 340, 50);
+      context.bezierCurveTo(320, 5, 250, 20, 250, 50);
+      context.bezierCurveTo(200, 5, 150, 20, 170, 80);
+      context.fill()
+      context.closePath();
+      context.lineWidth = 5;
+      context.strokeStyle = 'blue';
+      context.stroke();
+      context.save();
+      
+      //draw sun
+      context.beginPath();
+      context.shadowBlur="50";
+      context.fillStyle="#FFCC33";
+      context.shadowColor="#FF3333";
+      context.arc(50,100,50,0,2*Math.PI);
+      context.fill();
+      context.closePath();
+      context.save();
+      }
+    </script>
+       
+  </body>
+</html>
+
